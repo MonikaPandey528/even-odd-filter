@@ -8,33 +8,34 @@
   </head>
 
   <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-</head>
-  <body>
-<p id="numbers">3, 23, 7, 17, 42, 9, 22, 4, 33, 88, 13, 27, 10, 64</p>
-<button id="even">even</button>
-<button id="odd">odd</button>
-<p id="result"></p> 
-<script>
-  let numbers=[3, 23, 7, 17, 42, 9, 22, 4, 33, 88, 13, 27, 10, 64];
-const odd =document.getElementById("odd");
-const even=document.getElementById("even");
-const result=document.getElementById("result");
-odd.addEventListener("click",()=>{
-  let oddnumbers=numbers.filter(num=>num%2!==0);
-  result.textContent="odd numbers:"+oddnumbers.join(",");
-});
-even.addEventListener("click",()=>{
- let evennumbers=numbers.filter(num=>num%2==0);
-  result.textContent="even numbers:"+evennumbers.join(",");
-});
-</script>
-</body>
-  </html>
-      
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+      </head>
+      <!-- this is test -->
+      <body>
+        <p id="numbers">3, 23, 7, 17, 42, 9, 22, 4, 33, 88, 13, 27, 10, 64</p>
+        <button id="even">even</button>
+        <button id="odd">odd</button>
+        <p id="result"></p>
+        <script>
+          let numbers = [3, 23, 7, 17, 42, 9, 22, 4, 33, 88, 13, 27, 10, 64];
+          const odd = document.getElementById("odd");
+          const even = document.getElementById("even");
+          const result = document.getElementById("result");
+          odd.addEventListener("click", () => {
+            let oddnumbers = numbers.filter((num) => num % 2 !== 0);
+            result.textContent = "odd numbers:" + oddnumbers.join(",");
+          });
+          even.addEventListener("click", () => {
+            let evennumbers = numbers.filter((num) => num % 2 == 0);
+            result.textContent = "even numbers:" + evennumbers.join(",");
+          });
+        </script>
+      </body>
+    </html>
+
     <script src="script.js"></script>
   </body>
 </html>
